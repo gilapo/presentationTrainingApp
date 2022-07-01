@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC1BCFBC286DD1460082C25B /* FillerWordDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1BCFBB286DD1460082C25B /* FillerWordDetector.swift */; };
+		AC4C43CE286609E200CAEFB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43CD286609E200CAEFB7 /* AppDelegate.swift */; };
+		AC4C43D0286609E200CAEFB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43CF286609E200CAEFB7 /* SceneDelegate.swift */; };
+		AC4C43D2286609E200CAEFB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43D1286609E200CAEFB7 /* ViewController.swift */; };
+		AC4C43D5286609E200CAEFB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4C43D3286609E200CAEFB7 /* Main.storyboard */; };
+		AC4C43D8286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43D6286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld */; };
+		AC4C43DA286609E300CAEFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4C43D9286609E300CAEFB7 /* Assets.xcassets */; };
+		AC4C43DD286609E300CAEFB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4C43DB286609E300CAEFB7 /* LaunchScreen.storyboard */; };
+		AC4C43E8286609E300CAEFB7 /* DaSpeakable_MeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43E7286609E300CAEFB7 /* DaSpeakable_MeTests.swift */; };
+		AC4C43F2286609E300CAEFB7 /* DaSpeakable_MeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43F1286609E300CAEFB7 /* DaSpeakable_MeUITests.swift */; };
+		AC4C43F4286609E300CAEFB7 /* DaSpeakable_MeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43F3286609E300CAEFB7 /* DaSpeakable_MeUITestsLaunchTests.swift */; };
+		AC4C440528660AC100CAEFB7 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C440428660AC100CAEFB7 /* PracticeViewController.swift */; };
+		AC4C44072866136800CAEFB7 /* FillerWordClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AC4C44062866136800CAEFB7 /* FillerWordClassifier.mlmodel */; };
+		AC70EC28286EE3DD001398AB /* PracticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70EC27286EE3DD001398AB /* PracticeModel.swift */; };
+		AC70EC2B286EE7A1001398AB /* PracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70EC2A286EE7A1001398AB /* PracticeViewModel.swift */; };
+		AC790B82286AD35700368799 /* TimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC790B81286AD35700368799 /* TimeHelper.swift */; };
+		AC8DF25E286C085D001ADFF3 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF25D286C085D001ADFF3 /* CameraHelper.swift */; };
+		AC8DF260286C09BB001ADFF3 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF25F286C09BB001ADFF3 /* RecordingViewController.swift */; };
+		AC8DF263286C0E96001ADFF3 /* CustomToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF262286C0E96001ADFF3 /* CustomToast.swift */; };
+		AC8DF269286C1EE9001ADFF3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF268286C1EE9001ADFF3 /* MainViewController.swift */; };
+		AC8DF26D286C2125001ADFF3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF26C286C2125001ADFF3 /* CustomButton.swift */; };
+		AC8DF26F286C38A6001ADFF3 /* SpeechArticulationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF26E286C38A6001ADFF3 /* SpeechArticulationHelper.swift */; };
+		ACAFEA372869C0B500EE148D /* SpeakHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAFEA362869C0B500EE148D /* SpeakHelper.swift */; };
+		ACAFEA392869C1A500EE148D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAFEA382869C1A500EE148D /* ResultViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC4C43E4286609E300CAEFB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4C43C2286609E200CAEFB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4C43C9286609E200CAEFB7;
+			remoteInfo = "DaSpeakable Me";
+		};
+		AC4C43EE286609E300CAEFB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4C43C2286609E200CAEFB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4C43C9286609E200CAEFB7;
+			remoteInfo = "DaSpeakable Me";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC1BCFBB286DD1460082C25B /* FillerWordDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillerWordDetector.swift; sourceTree = "<group>"; };
+		AC4C43CA286609E200CAEFB7 /* DaSpeakable Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DaSpeakable Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4C43CD286609E200CAEFB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC4C43CF286609E200CAEFB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC4C43D1286609E200CAEFB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC4C43D4286609E200CAEFB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC4C43D7286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DaSpeakable_Me.xcdatamodel; sourceTree = "<group>"; };
+		AC4C43D9286609E300CAEFB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC4C43DC286609E300CAEFB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC4C43DE286609E300CAEFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4C43E3286609E300CAEFB7 /* DaSpeakable MeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DaSpeakable MeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4C43E7286609E300CAEFB7 /* DaSpeakable_MeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaSpeakable_MeTests.swift; sourceTree = "<group>"; };
+		AC4C43ED286609E300CAEFB7 /* DaSpeakable MeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DaSpeakable MeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4C43F1286609E300CAEFB7 /* DaSpeakable_MeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaSpeakable_MeUITests.swift; sourceTree = "<group>"; };
+		AC4C43F3286609E300CAEFB7 /* DaSpeakable_MeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaSpeakable_MeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC4C440428660AC100CAEFB7 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		AC4C44062866136800CAEFB7 /* FillerWordClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FillerWordClassifier.mlmodel; sourceTree = "<group>"; };
+		AC70EC27286EE3DD001398AB /* PracticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeModel.swift; sourceTree = "<group>"; };
+		AC70EC2A286EE7A1001398AB /* PracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewModel.swift; sourceTree = "<group>"; };
+		AC790B81286AD35700368799 /* TimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHelper.swift; sourceTree = "<group>"; };
+		AC8DF25D286C085D001ADFF3 /* CameraHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
+		AC8DF25F286C09BB001ADFF3 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		AC8DF262286C0E96001ADFF3 /* CustomToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToast.swift; sourceTree = "<group>"; };
+		AC8DF268286C1EE9001ADFF3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AC8DF26C286C2125001ADFF3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		AC8DF26E286C38A6001ADFF3 /* SpeechArticulationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechArticulationHelper.swift; sourceTree = "<group>"; };
+		ACAFEA362869C0B500EE148D /* SpeakHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakHelper.swift; sourceTree = "<group>"; };
+		ACAFEA382869C1A500EE148D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC4C43C7286609E200CAEFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4C43E0286609E300CAEFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4C43EA286609E300CAEFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC1BCFBA286DD1220082C25B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC1BCFBB286DD1460082C25B /* FillerWordDetector.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AC4C43C1286609E200CAEFB7 = {
+			isa = PBXGroup;
+			children = (
+				AC4C43CC286609E200CAEFB7 /* DaSpeakable Me */,
+				AC4C43E6286609E300CAEFB7 /* DaSpeakable MeTests */,
+				AC4C43F0286609E300CAEFB7 /* DaSpeakable MeUITests */,
+				AC4C43CB286609E200CAEFB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC4C43CB286609E200CAEFB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC4C43CA286609E200CAEFB7 /* DaSpeakable Me.app */,
+				AC4C43E3286609E300CAEFB7 /* DaSpeakable MeTests.xctest */,
+				AC4C43ED286609E300CAEFB7 /* DaSpeakable MeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC4C43CC286609E200CAEFB7 /* DaSpeakable Me */ = {
+			isa = PBXGroup;
+			children = (
+				AC70EC29286EE785001398AB /* ViewModel */,
+				AC1BCFBA286DD1220082C25B /* Services */,
+				AC4C44062866136800CAEFB7 /* FillerWordClassifier.mlmodel */,
+				AC4C440328660A1800CAEFB7 /* Core */,
+				ACAFEA352869BE9000EE148D /* Helper */,
+				AC4C4402286609FC00CAEFB7 /* Controller */,
+				AC4C4401286609F600CAEFB7 /* View */,
+				AC4C4400286609EF00CAEFB7 /* Model */,
+				AC4C43DE286609E300CAEFB7 /* Info.plist */,
+			);
+			path = "DaSpeakable Me";
+			sourceTree = "<group>";
+		};
+		AC4C43E6286609E300CAEFB7 /* DaSpeakable MeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC4C43E7286609E300CAEFB7 /* DaSpeakable_MeTests.swift */,
+			);
+			path = "DaSpeakable MeTests";
+			sourceTree = "<group>";
+		};
+		AC4C43F0286609E300CAEFB7 /* DaSpeakable MeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC4C43F1286609E300CAEFB7 /* DaSpeakable_MeUITests.swift */,
+				AC4C43F3286609E300CAEFB7 /* DaSpeakable_MeUITestsLaunchTests.swift */,
+			);
+			path = "DaSpeakable MeUITests";
+			sourceTree = "<group>";
+		};
+		AC4C4400286609EF00CAEFB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC4C43D6286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld */,
+				AC70EC27286EE3DD001398AB /* PracticeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC4C4401286609F600CAEFB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DF26B286C2113001ADFF3 /* CustomView */,
+				AC4C43D3286609E200CAEFB7 /* Main.storyboard */,
+				AC4C43DB286609E300CAEFB7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC4C4402286609FC00CAEFB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC4C43D1286609E200CAEFB7 /* ViewController.swift */,
+				AC4C440428660AC100CAEFB7 /* PracticeViewController.swift */,
+				ACAFEA382869C1A500EE148D /* ResultViewController.swift */,
+				AC8DF25F286C09BB001ADFF3 /* RecordingViewController.swift */,
+				AC8DF268286C1EE9001ADFF3 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC4C440328660A1800CAEFB7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AC4C43CD286609E200CAEFB7 /* AppDelegate.swift */,
+				AC4C43CF286609E200CAEFB7 /* SceneDelegate.swift */,
+				AC4C43D9286609E300CAEFB7 /* Assets.xcassets */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AC70EC29286EE785001398AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC70EC2A286EE7A1001398AB /* PracticeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC8DF25C286C084B001ADFF3 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DF25D286C085D001ADFF3 /* CameraHelper.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		AC8DF26B286C2113001ADFF3 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DF262286C0E96001ADFF3 /* CustomToast.swift */,
+				AC8DF26C286C2125001ADFF3 /* CustomButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		ACAFEA352869BE9000EE148D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DF25C286C084B001ADFF3 /* Camera */,
+				ACAFEA362869C0B500EE148D /* SpeakHelper.swift */,
+				AC790B81286AD35700368799 /* TimeHelper.swift */,
+				AC8DF26E286C38A6001ADFF3 /* SpeechArticulationHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC4C43C9286609E200CAEFB7 /* DaSpeakable Me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC4C43F7286609E300CAEFB7 /* Build configuration list for PBXNativeTarget "DaSpeakable Me" */;
+			buildPhases = (
+				AC4C43C6286609E200CAEFB7 /* Sources */,
+				AC4C43C7286609E200CAEFB7 /* Frameworks */,
+				AC4C43C8286609E200CAEFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DaSpeakable Me";
+			productName = "DaSpeakable Me";
+			productReference = AC4C43CA286609E200CAEFB7 /* DaSpeakable Me.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC4C43E2286609E300CAEFB7 /* DaSpeakable MeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC4C43FA286609E300CAEFB7 /* Build configuration list for PBXNativeTarget "DaSpeakable MeTests" */;
+			buildPhases = (
+				AC4C43DF286609E300CAEFB7 /* Sources */,
+				AC4C43E0286609E300CAEFB7 /* Frameworks */,
+				AC4C43E1286609E300CAEFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC4C43E5286609E300CAEFB7 /* PBXTargetDependency */,
+			);
+			name = "DaSpeakable MeTests";
+			productName = "DaSpeakable MeTests";
+			productReference = AC4C43E3286609E300CAEFB7 /* DaSpeakable MeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC4C43EC286609E300CAEFB7 /* DaSpeakable MeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC4C43FD286609E300CAEFB7 /* Build configuration list for PBXNativeTarget "DaSpeakable MeUITests" */;
+			buildPhases = (
+				AC4C43E9286609E300CAEFB7 /* Sources */,
+				AC4C43EA286609E300CAEFB7 /* Frameworks */,
+				AC4C43EB286609E300CAEFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC4C43EF286609E300CAEFB7 /* PBXTargetDependency */,
+			);
+			name = "DaSpeakable MeUITests";
+			productName = "DaSpeakable MeUITests";
+			productReference = AC4C43ED286609E300CAEFB7 /* DaSpeakable MeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC4C43C2286609E200CAEFB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					AC4C43C9286609E200CAEFB7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					AC4C43E2286609E300CAEFB7 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AC4C43C9286609E200CAEFB7;
+					};
+					AC4C43EC286609E300CAEFB7 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AC4C43C9286609E200CAEFB7;
+					};
+				};
+			};
+			buildConfigurationList = AC4C43C5286609E200CAEFB7 /* Build configuration list for PBXProject "DaSpeakable Me" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC4C43C1286609E200CAEFB7;
+			productRefGroup = AC4C43CB286609E200CAEFB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC4C43C9286609E200CAEFB7 /* DaSpeakable Me */,
+				AC4C43E2286609E300CAEFB7 /* DaSpeakable MeTests */,
+				AC4C43EC286609E300CAEFB7 /* DaSpeakable MeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC4C43C8286609E200CAEFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4C43DD286609E300CAEFB7 /* LaunchScreen.storyboard in Resources */,
+				AC4C43DA286609E300CAEFB7 /* Assets.xcassets in Resources */,
+				AC4C43D5286609E200CAEFB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4C43E1286609E300CAEFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4C43EB286609E300CAEFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC4C43C6286609E200CAEFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4C43D2286609E200CAEFB7 /* ViewController.swift in Sources */,
+				AC8DF26F286C38A6001ADFF3 /* SpeechArticulationHelper.swift in Sources */,
+				AC8DF269286C1EE9001ADFF3 /* MainViewController.swift in Sources */,
+				AC8DF263286C0E96001ADFF3 /* CustomToast.swift in Sources */,
+				AC8DF25E286C085D001ADFF3 /* CameraHelper.swift in Sources */,
+				AC8DF26D286C2125001ADFF3 /* CustomButton.swift in Sources */,
+				ACAFEA372869C0B500EE148D /* SpeakHelper.swift in Sources */,
+				AC70EC28286EE3DD001398AB /* PracticeModel.swift in Sources */,
+				AC1BCFBC286DD1460082C25B /* FillerWordDetector.swift in Sources */,
+				AC790B82286AD35700368799 /* TimeHelper.swift in Sources */,
+				AC4C43D8286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld in Sources */,
+				ACAFEA392869C1A500EE148D /* ResultViewController.swift in Sources */,
+				AC4C43CE286609E200CAEFB7 /* AppDelegate.swift in Sources */,
+				AC70EC2B286EE7A1001398AB /* PracticeViewModel.swift in Sources */,
+				AC8DF260286C09BB001ADFF3 /* RecordingViewController.swift in Sources */,
+				AC4C440528660AC100CAEFB7 /* PracticeViewController.swift in Sources */,
+				AC4C44072866136800CAEFB7 /* FillerWordClassifier.mlmodel in Sources */,
+				AC4C43D0286609E200CAEFB7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4C43DF286609E300CAEFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4C43E8286609E300CAEFB7 /* DaSpeakable_MeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4C43E9286609E300CAEFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4C43F4286609E300CAEFB7 /* DaSpeakable_MeUITestsLaunchTests.swift in Sources */,
+				AC4C43F2286609E300CAEFB7 /* DaSpeakable_MeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC4C43E5286609E300CAEFB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC4C43C9286609E200CAEFB7 /* DaSpeakable Me */;
+			targetProxy = AC4C43E4286609E300CAEFB7 /* PBXContainerItemProxy */;
+		};
+		AC4C43EF286609E300CAEFB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC4C43C9286609E200CAEFB7 /* DaSpeakable Me */;
+			targetProxy = AC4C43EE286609E300CAEFB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC4C43D3286609E200CAEFB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4C43D4286609E200CAEFB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC4C43DB286609E300CAEFB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4C43DC286609E300CAEFB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC4C43F5286609E300CAEFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC4C43F6286609E300CAEFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC4C43F8286609E300CAEFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R495F663N6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DaSpeakable Me/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gilapo.DaSpeakable-Me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC4C43F9286609E300CAEFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R495F663N6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DaSpeakable Me/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gilapo.DaSpeakable-Me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC4C43FB286609E300CAEFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R495F663N6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gilapo.DaSpeakable-MeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaSpeakable Me.app/DaSpeakable Me";
+			};
+			name = Debug;
+		};
+		AC4C43FC286609E300CAEFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R495F663N6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gilapo.DaSpeakable-MeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaSpeakable Me.app/DaSpeakable Me";
+			};
+			name = Release;
+		};
+		AC4C43FE286609E300CAEFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R495F663N6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gilapo.DaSpeakable-MeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DaSpeakable Me";
+			};
+			name = Debug;
+		};
+		AC4C43FF286609E300CAEFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R495F663N6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gilapo.DaSpeakable-MeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DaSpeakable Me";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC4C43C5286609E200CAEFB7 /* Build configuration list for PBXProject "DaSpeakable Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4C43F5286609E300CAEFB7 /* Debug */,
+				AC4C43F6286609E300CAEFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC4C43F7286609E300CAEFB7 /* Build configuration list for PBXNativeTarget "DaSpeakable Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4C43F8286609E300CAEFB7 /* Debug */,
+				AC4C43F9286609E300CAEFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC4C43FA286609E300CAEFB7 /* Build configuration list for PBXNativeTarget "DaSpeakable MeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4C43FB286609E300CAEFB7 /* Debug */,
+				AC4C43FC286609E300CAEFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC4C43FD286609E300CAEFB7 /* Build configuration list for PBXNativeTarget "DaSpeakable MeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4C43FE286609E300CAEFB7 /* Debug */,
+				AC4C43FF286609E300CAEFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC4C43D6286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC4C43D7286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodel */,
+			);
+			currentVersion = AC4C43D7286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodel */;
+			path = DaSpeakable_Me.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC4C43C2286609E200CAEFB7 /* Project object */;
+}
