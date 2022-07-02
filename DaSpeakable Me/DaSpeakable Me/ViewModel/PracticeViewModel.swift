@@ -7,30 +7,37 @@
 
 import Foundation
 
-var practiceTitle:String?
-var wordPerMinutes:Double?
-var articulation:Double?
-var smoothRate:Double?
-var fillerWords = [(label: String, confidence: Float)]()
+class PracticeViewModel {
+    
+    var items: [PracticeModel] = [] {
+        didSet{
+            savePractice()
+        }
+    }
 
-var videoUrl:String?
-
-//class PracticeViewModel {
-//
-//    var items: [PracticeModel] = [] {
-//        didSet{
-//            savePractice()
-//        }
-//    }
-//
-//    init() {
-//        getItems()
-//    }
-//
-//    func getItems() {
-//        guard
-//            let data = UserDefaults.standard.data(forKey: "PracticeList")
-//                let savedPractice = try? JSONDecoder.decode([PracticeModel])
-//    }
-//}
-
+    init() {
+        getItems()
+    }
+    
+    func getItems() {
+        guard
+            let data = UserDefaults.standard.data(forKey: "PracticeList"),
+            let savedPractices = try? JSONDecoder().decode([PracticeModel].self, from: data)
+        else { return }
+        
+        self.items = savedPractices
+    }
+    
+    func addPractice(practiceTitle: String, practiceWPM: Double, practiceArticulation: Double, practiceSmoothRate: Double, practiceVideoUrl: String, practiceFwEh: Int, practiceFwHa: Int, practiceFwHm: Int) {
+        
+        let newPractice = PracticeModel(practiceTitle: practiceTitle, practiceWPM: practiceWPM, practiceArticulation: practiceArticulation, practiceSmoothRate: practiceSmoothRate, practiceVideoUrl: practiceVideoUrl, practiceFwEh: practiceFwEh, practiceFwHa: practiceFwHa, practiceFwHm: practiceFwHm)
+        
+        items.append(newPractice)
+    }
+    
+    func savePractice() {
+        if let encodedData = try? JSONEncoder().encode(items) {
+            UserDefaults.standard.set(encodedData, forKey: "PracticeList")
+        }
+    }
+}

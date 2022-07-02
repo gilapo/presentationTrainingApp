@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63A2E205286EF02400C67464 /* PracticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2E203286EF02400C67464 /* PracticeTableViewCell.swift */; };
+		63A2E206286EF02400C67464 /* PracticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A2E204286EF02400C67464 /* PracticeTableViewCell.xib */; };
+		63A2E209286F352000C67464 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2E208286F352000C67464 /* ResultViewController.swift */; };
+		63A2E20B286F352E00C67464 /* ResultStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A2E20A286F352E00C67464 /* ResultStoryboard.storyboard */; };
+		63A2E217286F37A700C67464 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2E215286F37A700C67464 /* ResultTableViewCell.swift */; };
+		63A2E218286F37A700C67464 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A2E216286F37A700C67464 /* ResultTableViewCell.xib */; };
 		AC1BCFBC286DD1460082C25B /* FillerWordDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1BCFBB286DD1460082C25B /* FillerWordDetector.swift */; };
 		AC4C43CE286609E200CAEFB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43CD286609E200CAEFB7 /* AppDelegate.swift */; };
 		AC4C43D0286609E200CAEFB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43CF286609E200CAEFB7 /* SceneDelegate.swift */; };
 		AC4C43D2286609E200CAEFB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43D1286609E200CAEFB7 /* ViewController.swift */; };
 		AC4C43D5286609E200CAEFB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4C43D3286609E200CAEFB7 /* Main.storyboard */; };
-		AC4C43D8286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43D6286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld */; };
 		AC4C43DA286609E300CAEFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4C43D9286609E300CAEFB7 /* Assets.xcassets */; };
 		AC4C43DD286609E300CAEFB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4C43DB286609E300CAEFB7 /* LaunchScreen.storyboard */; };
 		AC4C43E8286609E300CAEFB7 /* DaSpeakable_MeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43E7286609E300CAEFB7 /* DaSpeakable_MeTests.swift */; };
@@ -30,7 +35,6 @@
 		AC8DF26D286C2125001ADFF3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF26C286C2125001ADFF3 /* CustomButton.swift */; };
 		AC8DF26F286C38A6001ADFF3 /* SpeechArticulationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DF26E286C38A6001ADFF3 /* SpeechArticulationHelper.swift */; };
 		ACAFEA372869C0B500EE148D /* SpeakHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAFEA362869C0B500EE148D /* SpeakHelper.swift */; };
-		ACAFEA392869C1A500EE148D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAFEA382869C1A500EE148D /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +55,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63A2E203286EF02400C67464 /* PracticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewCell.swift; sourceTree = "<group>"; };
+		63A2E204286EF02400C67464 /* PracticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeTableViewCell.xib; sourceTree = "<group>"; };
+		63A2E208286F352000C67464 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		63A2E20A286F352E00C67464 /* ResultStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultStoryboard.storyboard; sourceTree = "<group>"; };
+		63A2E215286F37A700C67464 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		63A2E216286F37A700C67464 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		AC1BCFBB286DD1460082C25B /* FillerWordDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillerWordDetector.swift; sourceTree = "<group>"; };
 		AC4C43CA286609E200CAEFB7 /* DaSpeakable Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DaSpeakable Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4C43CD286609E200CAEFB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC4C43CF286609E200CAEFB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AC4C43D1286609E200CAEFB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC4C43D4286609E200CAEFB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC4C43D7286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DaSpeakable_Me.xcdatamodel; sourceTree = "<group>"; };
 		AC4C43D9286609E300CAEFB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC4C43DC286609E300CAEFB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC4C43DE286609E300CAEFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,7 +87,6 @@
 		AC8DF26C286C2125001ADFF3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		AC8DF26E286C38A6001ADFF3 /* SpeechArticulationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechArticulationHelper.swift; sourceTree = "<group>"; };
 		ACAFEA362869C0B500EE148D /* SpeakHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakHelper.swift; sourceTree = "<group>"; };
-		ACAFEA382869C1A500EE148D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63A2E201286EEDC300C67464 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				63A2E202286EEFFF00C67464 /* PracticeTableViewCell */,
+				AC4C43D3286609E200CAEFB7 /* Main.storyboard */,
+				AC8DF268286C1EE9001ADFF3 /* MainViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		63A2E202286EEFFF00C67464 /* PracticeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				63A2E203286EF02400C67464 /* PracticeTableViewCell.swift */,
+				63A2E204286EF02400C67464 /* PracticeTableViewCell.xib */,
+			);
+			path = PracticeTableViewCell;
+			sourceTree = "<group>";
+		};
+		63A2E207286F34E400C67464 /* ResultView */ = {
+			isa = PBXGroup;
+			children = (
+				63A2E20C286F368600C67464 /* ResultTableViewCell */,
+				63A2E208286F352000C67464 /* ResultViewController.swift */,
+				63A2E20A286F352E00C67464 /* ResultStoryboard.storyboard */,
+			);
+			path = ResultView;
+			sourceTree = "<group>";
+		};
+		63A2E20C286F368600C67464 /* ResultTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				63A2E215286F37A700C67464 /* ResultTableViewCell.swift */,
+				63A2E216286F37A700C67464 /* ResultTableViewCell.xib */,
+			);
+			path = ResultTableViewCell;
+			sourceTree = "<group>";
+		};
 		AC1BCFBA286DD1220082C25B /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,15 +183,15 @@
 		AC4C43CC286609E200CAEFB7 /* DaSpeakable Me */ = {
 			isa = PBXGroup;
 			children = (
+				AC4C4400286609EF00CAEFB7 /* Model */,
 				AC70EC29286EE785001398AB /* ViewModel */,
+				AC4C4401286609F600CAEFB7 /* View */,
 				AC1BCFBA286DD1220082C25B /* Services */,
 				AC4C44062866136800CAEFB7 /* FillerWordClassifier.mlmodel */,
-				AC4C440328660A1800CAEFB7 /* Core */,
 				ACAFEA352869BE9000EE148D /* Helper */,
 				AC4C4402286609FC00CAEFB7 /* Controller */,
-				AC4C4401286609F600CAEFB7 /* View */,
-				AC4C4400286609EF00CAEFB7 /* Model */,
 				AC4C43DE286609E300CAEFB7 /* Info.plist */,
+				AC4C440328660A1800CAEFB7 /* Core */,
 			);
 			path = "DaSpeakable Me";
 			sourceTree = "<group>";
@@ -170,7 +216,6 @@
 		AC4C4400286609EF00CAEFB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AC4C43D6286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld */,
 				AC70EC27286EE3DD001398AB /* PracticeModel.swift */,
 			);
 			path = Model;
@@ -179,9 +224,10 @@
 		AC4C4401286609F600CAEFB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC8DF26B286C2113001ADFF3 /* CustomView */,
-				AC4C43D3286609E200CAEFB7 /* Main.storyboard */,
 				AC4C43DB286609E300CAEFB7 /* LaunchScreen.storyboard */,
+				63A2E201286EEDC300C67464 /* MainView */,
+				63A2E207286F34E400C67464 /* ResultView */,
+				AC8DF26B286C2113001ADFF3 /* CustomView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,9 +237,7 @@
 			children = (
 				AC4C43D1286609E200CAEFB7 /* ViewController.swift */,
 				AC4C440428660AC100CAEFB7 /* PracticeViewController.swift */,
-				ACAFEA382869C1A500EE148D /* ResultViewController.swift */,
 				AC8DF25F286C09BB001ADFF3 /* RecordingViewController.swift */,
-				AC8DF268286C1EE9001ADFF3 /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,7 +392,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A2E206286EF02400C67464 /* PracticeTableViewCell.xib in Resources */,
 				AC4C43DD286609E300CAEFB7 /* LaunchScreen.storyboard in Resources */,
+				63A2E218286F37A700C67464 /* ResultTableViewCell.xib in Resources */,
+				63A2E20B286F352E00C67464 /* ResultStoryboard.storyboard in Resources */,
 				AC4C43DA286609E300CAEFB7 /* Assets.xcassets in Resources */,
 				AC4C43D5286609E200CAEFB7 /* Main.storyboard in Resources */,
 			);
@@ -376,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4C43D2286609E200CAEFB7 /* ViewController.swift in Sources */,
+				63A2E209286F352000C67464 /* ResultViewController.swift in Sources */,
 				AC8DF26F286C38A6001ADFF3 /* SpeechArticulationHelper.swift in Sources */,
 				AC8DF269286C1EE9001ADFF3 /* MainViewController.swift in Sources */,
 				AC8DF263286C0E96001ADFF3 /* CustomToast.swift in Sources */,
@@ -385,13 +433,13 @@
 				AC70EC28286EE3DD001398AB /* PracticeModel.swift in Sources */,
 				AC1BCFBC286DD1460082C25B /* FillerWordDetector.swift in Sources */,
 				AC790B82286AD35700368799 /* TimeHelper.swift in Sources */,
-				AC4C43D8286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld in Sources */,
-				ACAFEA392869C1A500EE148D /* ResultViewController.swift in Sources */,
 				AC4C43CE286609E200CAEFB7 /* AppDelegate.swift in Sources */,
 				AC70EC2B286EE7A1001398AB /* PracticeViewModel.swift in Sources */,
 				AC8DF260286C09BB001ADFF3 /* RecordingViewController.swift in Sources */,
 				AC4C440528660AC100CAEFB7 /* PracticeViewController.swift in Sources */,
 				AC4C44072866136800CAEFB7 /* FillerWordClassifier.mlmodel in Sources */,
+				63A2E205286EF02400C67464 /* PracticeTableViewCell.swift in Sources */,
+				63A2E217286F37A700C67464 /* ResultTableViewCell.swift in Sources */,
 				AC4C43D0286609E200CAEFB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -734,19 +782,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AC4C43D6286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AC4C43D7286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodel */,
-			);
-			currentVersion = AC4C43D7286609E200CAEFB7 /* DaSpeakable_Me.xcdatamodel */;
-			path = DaSpeakable_Me.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AC4C43C2286609E200CAEFB7 /* Project object */;
 }

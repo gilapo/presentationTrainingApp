@@ -192,7 +192,7 @@ class PracticeViewController: UIViewController, SFSpeechRecognizerDelegate {
     func speakingResult(){
         resultView.isHidden = false
         
-        (wordsPerMinutes, averagePause, totalWord) = SpeakHelper().getWordPerMinutes(speakResult: self.speechResult)
+        (averagePause, totalWord) = SpeakHelper().getWordPerMinutes(speakResult: self.speechResult)
         
         pauseDurationLabel.text = "pause Duration : \(averagePause ?? 0))"
         wpmLabel.text = "words per minutes : \(wordsPerMinutes ?? 0))"

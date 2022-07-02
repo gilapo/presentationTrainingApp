@@ -12,12 +12,10 @@ import SoundAnalysis
 
 class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
     
-    
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
     var speechResult:SFSpeechRecognitionResult?
-    
     private let audioEngine = AVAudioEngine()
     
     
@@ -35,12 +33,17 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
     var fillerWords = [(label: String, confidence: Float)]()
     
     var totalWord : Int?
-    var wordsPerMinutes : Double?
+    var wordsPerMinutes : Double = 0
     var averagePause : TimeInterval?
     var durationSpeak : String?
     
-    var clearRate : Double?
-    var smoothRate : Double?
+    var clearRate : Double = 0
+    var smoothRate : Double = 0
+    
+    var videoSaveAt: String = ""
+    var counterFwEh: Int = 0
+    var counterFwHm: Int = 0
+    var counterFwHa: Int = 0
     
     @IBOutlet weak var practiceButton: UIButton!
     @IBOutlet weak var previewImageView: UIImageView!
@@ -51,6 +54,8 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     var cameraConfig: CameraHelper!
     let imagePickerController = UIImagePickerController()
+    
+    let viewModel: PracticeViewModel = PracticeViewModel()
     
     var videoRecordingStarted: Bool = false
     {
@@ -133,9 +138,6 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
             self.practiceButton.tintColor = UIColor(named: "Navy")
             self.practiceButton.isUserInteractionEnabled = true
         }
-        
-        
-        
         
     }
     
@@ -305,20 +307,22 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     
     func speakingResult(){
-        
+        //MARK: Speaking Result
         if (speechResult != nil){
-            (wordsPerMinutes, averagePause, totalWord) = SpeakHelper().getWordPerMinutes(speakResult: self.speechResult)
+            (averagePause, totalWord) = SpeakHelper().getWordPerMinutes(speakResult: self.speechResult)
             print("pause Duration : \(averagePause ?? 0))")
             print("wordsPerMinutes : \(Double((totalWord ?? 0)/estimatedTime))")
             print("totalWord : \(totalWord ?? 0))")
+            
+            wordsPerMinutes = Double(totalWord ?? 0)/Double(estimatedTime)
             
             Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { [self] (timer) in
                 
                 (clearRate, smoothRate) = SpeechArticulationHelper().getClearAndSmoothRate(speechFinishedResult: self.speechResult)
                 
                 print("this is from controller")
-                print(clearRate ?? 0.0)
-                print(smoothRate ?? 0.0)
+                print(clearRate)
+                print(smoothRate)
                 
             }
         }else{
@@ -378,9 +382,18 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
             self.speakingResult()
             
             //move to result
-            let resultVc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            let resultVc = UIStoryboard(name: "ResultStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                
                 self.navigationController?.pushViewController(resultVc, animated: true)
+                
+                // append new practice
+                self.viewModel.addPractice(practiceTitle: "Practice", practiceWPM: self.wordsPerMinutes, practiceArticulation: self.clearRate, practiceSmoothRate: self.smoothRate, practiceVideoUrl: self.videoSaveAt, practiceFwEh: self.counterFwEh, practiceFwHa: self.counterFwHa, practiceFwHm: self.counterFwHm)
+                
+                print("isi view artikulasi", self.viewModel.items[self.viewModel.items.count-1].practiceArticulation)
+                print("isi view wpm", self.viewModel.items[self.viewModel.items.count-1].practiceWPM)
+                print("isi view smooth", self.viewModel.items[self.viewModel.items.count-1].practiceSmoothRate)
             }
             
             
@@ -484,10 +497,19 @@ extension RecordingViewController: SNResultsObserving {
             let confidence = classification.confidence * 100
             if confidence > 5 {
                 temp.append((label: classification.identifier, confidence: Float(confidence)))
+                
+                if classification.identifier == "eh" && confidence>=50 {
+                    self.counterFwEh += 1
+                }else if classification.identifier == "ha" && confidence>=50 {
+                    self.counterFwHa += 1
+                }else if classification.identifier == "hm" && confidence>=50 {
+                    self.counterFwHm += 1
+                }
             }
             
         }
         
+        //MARK: Filler Word
         print(temp)
         fillerWords = temp
     }
@@ -506,6 +528,7 @@ extension RecordingViewController: UIImagePickerControllerDelegate, UINavigation
         }
         if let videoURL = info[UIImagePickerController.InfoKey.mediaURL] as? URL {
             print("videoURL:\(String(describing: videoURL))")
+            self.videoSaveAt = String(describing: videoURL)
         }
         
         self.dismiss(animated: true, completion: nil)

@@ -64,8 +64,6 @@ class SpeechArticulationHelper {
                 pauseFinal = pauseFinal > 1.0 ? 1.0 : pauseFinal
             }
             
-            print("word speed \(wordSpeed) pausefinal \(pauseFinal)")
-            
             let notSmoothRate = (wordSpeed + pauseFinal) / 2
             let smoothRate = 1 - notSmoothRate
             

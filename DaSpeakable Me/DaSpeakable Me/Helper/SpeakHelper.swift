@@ -11,11 +11,11 @@ import Speech
 class SpeakHelper{
     
     
-    func getWordPerMinutes(speakResult : SFSpeechRecognitionResult?) -> (wpm:Double?, averagePause:TimeInterval?, wordCount:Int?) {
+    func getWordPerMinutes(speakResult : SFSpeechRecognitionResult?) -> ( averagePause:TimeInterval?, wordCount:Int?) {
         
         guard let speechFinishedResult = speakResult else {
             print("No Result")
-            return(0.0, 00.00, 0)
+            return(00.00, 0)
         }
         
         
@@ -26,13 +26,13 @@ class SpeakHelper{
         let totalWord = words.count
         
         
-        let wordPerMinutes = speechFinishedResult.speechRecognitionMetadata?.speakingRate
+        //let wordPerMinutes = speechFinishedResult.speechRecognitionMetadata?.speakingRate
         let averagePauseDuration = speechFinishedResult.speechRecognitionMetadata?.averagePauseDuration
         
         //let durationSpeak = speechFinishedResult.speechRecognitionMetadata?.speechDuration
         
         
-        return (wpm:wordPerMinutes, averagePause:averagePauseDuration, wordCount:totalWord)
+        return (averagePause:averagePauseDuration, wordCount:totalWord)
     }
     
     
