@@ -21,7 +21,11 @@ struct PracticeModel: Codable{
     var practiceFwHa: Int = 0
     var practiceFwHm: Int = 0
     
-    init(practiceTitle: String, practiceWPM: Double, practiceArticulation: Double, practiceSmoothRate: Double, practiceVideoUrl: String, practiceFwEh: Int, practiceFwHa: Int, practiceFwHm: Int) {
+    var currentDate: String = ""
+    
+    var overallScore:Double = 0.0
+    
+    init(practiceTitle: String, practiceWPM: Double, practiceArticulation: Double, practiceSmoothRate: Double, practiceVideoUrl: String, practiceFwEh: Int, practiceFwHa: Int, practiceFwHm: Int, currentDate:String) {
         self.practiceTitle = practiceTitle
         self.practiceWPM = practiceWPM
         self.practiceArticulation = practiceArticulation
@@ -30,6 +34,9 @@ struct PracticeModel: Codable{
         self.practiceFwEh = practiceFwEh
         self.practiceFwHa = practiceFwHa
         self.practiceFwHm = practiceFwHm
+        
+        self.currentDate = currentDate
+        
+        self.overallScore = ((practiceWPM+practiceArticulation+practiceSmoothRate)/3)
     }
-    
 }

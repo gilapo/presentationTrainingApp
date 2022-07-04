@@ -11,10 +11,14 @@ class PracticeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var practiceTitleLabel: UILabel!
     @IBOutlet weak var resultButton: UIButton!
+    @IBOutlet weak var practiceDate: UILabel!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var pinnedImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

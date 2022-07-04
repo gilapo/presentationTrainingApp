@@ -14,7 +14,7 @@ class PracticeViewModel {
             savePractice()
         }
     }
-
+    
     init() {
         getItems()
     }
@@ -28,9 +28,9 @@ class PracticeViewModel {
         self.items = savedPractices
     }
     
-    func addPractice(practiceTitle: String, practiceWPM: Double, practiceArticulation: Double, practiceSmoothRate: Double, practiceVideoUrl: String, practiceFwEh: Int, practiceFwHa: Int, practiceFwHm: Int) {
+    func addPractice(practiceTitle: String, practiceWPM: Double, practiceArticulation: Double, practiceSmoothRate: Double, practiceVideoUrl: String, practiceFwEh: Int, practiceFwHa: Int, practiceFwHm: Int, currentDate:String) {
         
-        let newPractice = PracticeModel(practiceTitle: practiceTitle, practiceWPM: practiceWPM, practiceArticulation: practiceArticulation, practiceSmoothRate: practiceSmoothRate, practiceVideoUrl: practiceVideoUrl, practiceFwEh: practiceFwEh, practiceFwHa: practiceFwHa, practiceFwHm: practiceFwHm)
+        let newPractice = PracticeModel(practiceTitle: practiceTitle, practiceWPM: practiceWPM, practiceArticulation: practiceArticulation, practiceSmoothRate: practiceSmoothRate, practiceVideoUrl: practiceVideoUrl, practiceFwEh: practiceFwEh, practiceFwHa: practiceFwHa, practiceFwHm: practiceFwHm, currentDate: currentDate)
         
         items.append(newPractice)
     }

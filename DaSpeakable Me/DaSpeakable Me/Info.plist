@@ -29,9 +29,9 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Camera will use to record your facial expression while practice</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>to add photo</string>
+	<string>This app uses photo library</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>to save photo</string>
+	<string>This app uses photo library to save video</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LauncScreen</string>
 	<key>UIMainStoryboardFile</key>

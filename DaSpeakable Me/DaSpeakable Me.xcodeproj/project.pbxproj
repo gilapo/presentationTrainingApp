@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		634FB52128702FCF009F00C1 /* IndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634FB52028702FCF009F00C1 /* IndicatorViewController.swift */; };
+		634FB52328702FE3009F00C1 /* IndicatorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634FB52228702FE3009F00C1 /* IndicatorStoryboard.storyboard */; };
 		63A2E205286EF02400C67464 /* PracticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2E203286EF02400C67464 /* PracticeTableViewCell.swift */; };
 		63A2E206286EF02400C67464 /* PracticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A2E204286EF02400C67464 /* PracticeTableViewCell.xib */; };
 		63A2E209286F352000C67464 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2E208286F352000C67464 /* ResultViewController.swift */; };
 		63A2E20B286F352E00C67464 /* ResultStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A2E20A286F352E00C67464 /* ResultStoryboard.storyboard */; };
 		63A2E217286F37A700C67464 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2E215286F37A700C67464 /* ResultTableViewCell.swift */; };
 		63A2E218286F37A700C67464 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A2E216286F37A700C67464 /* ResultTableViewCell.xib */; };
-		AC1BCFBC286DD1460082C25B /* FillerWordDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1BCFBB286DD1460082C25B /* FillerWordDetector.swift */; };
+		63BC6C3D28718F04008F1389 /* PracticeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC6C3C28718F04008F1389 /* PracticeVideoViewController.swift */; };
+		63BC6C3F28718F75008F1389 /* PracticeVideoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BC6C3E28718F75008F1389 /* PracticeVideoStoryboard.storyboard */; };
 		AC4C43CE286609E200CAEFB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43CD286609E200CAEFB7 /* AppDelegate.swift */; };
 		AC4C43D0286609E200CAEFB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43CF286609E200CAEFB7 /* SceneDelegate.swift */; };
 		AC4C43D2286609E200CAEFB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43D1286609E200CAEFB7 /* ViewController.swift */; };
@@ -23,7 +26,6 @@
 		AC4C43E8286609E300CAEFB7 /* DaSpeakable_MeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43E7286609E300CAEFB7 /* DaSpeakable_MeTests.swift */; };
 		AC4C43F2286609E300CAEFB7 /* DaSpeakable_MeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43F1286609E300CAEFB7 /* DaSpeakable_MeUITests.swift */; };
 		AC4C43F4286609E300CAEFB7 /* DaSpeakable_MeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C43F3286609E300CAEFB7 /* DaSpeakable_MeUITestsLaunchTests.swift */; };
-		AC4C440528660AC100CAEFB7 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C440428660AC100CAEFB7 /* PracticeViewController.swift */; };
 		AC4C44072866136800CAEFB7 /* FillerWordClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AC4C44062866136800CAEFB7 /* FillerWordClassifier.mlmodel */; };
 		AC70EC28286EE3DD001398AB /* PracticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70EC27286EE3DD001398AB /* PracticeModel.swift */; };
 		AC70EC2B286EE7A1001398AB /* PracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70EC2A286EE7A1001398AB /* PracticeViewModel.swift */; };
@@ -55,13 +57,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		634FB52028702FCF009F00C1 /* IndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
+		634FB52228702FE3009F00C1 /* IndicatorStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IndicatorStoryboard.storyboard; sourceTree = "<group>"; };
 		63A2E203286EF02400C67464 /* PracticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewCell.swift; sourceTree = "<group>"; };
 		63A2E204286EF02400C67464 /* PracticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeTableViewCell.xib; sourceTree = "<group>"; };
 		63A2E208286F352000C67464 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		63A2E20A286F352E00C67464 /* ResultStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultStoryboard.storyboard; sourceTree = "<group>"; };
 		63A2E215286F37A700C67464 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		63A2E216286F37A700C67464 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
-		AC1BCFBB286DD1460082C25B /* FillerWordDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillerWordDetector.swift; sourceTree = "<group>"; };
+		63BC6C3C28718F04008F1389 /* PracticeVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeVideoViewController.swift; sourceTree = "<group>"; };
+		63BC6C3E28718F75008F1389 /* PracticeVideoStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PracticeVideoStoryboard.storyboard; sourceTree = "<group>"; };
 		AC4C43CA286609E200CAEFB7 /* DaSpeakable Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DaSpeakable Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4C43CD286609E200CAEFB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC4C43CF286609E200CAEFB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +80,6 @@
 		AC4C43ED286609E300CAEFB7 /* DaSpeakable MeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DaSpeakable MeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4C43F1286609E300CAEFB7 /* DaSpeakable_MeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaSpeakable_MeUITests.swift; sourceTree = "<group>"; };
 		AC4C43F3286609E300CAEFB7 /* DaSpeakable_MeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaSpeakable_MeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AC4C440428660AC100CAEFB7 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		AC4C44062866136800CAEFB7 /* FillerWordClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FillerWordClassifier.mlmodel; sourceTree = "<group>"; };
 		AC70EC27286EE3DD001398AB /* PracticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeModel.swift; sourceTree = "<group>"; };
 		AC70EC2A286EE7A1001398AB /* PracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewModel.swift; sourceTree = "<group>"; };
@@ -114,11 +118,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		634FB51F28702F94009F00C1 /* IndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				634FB52028702FCF009F00C1 /* IndicatorViewController.swift */,
+				634FB52228702FE3009F00C1 /* IndicatorStoryboard.storyboard */,
+			);
+			path = IndicatorView;
+			sourceTree = "<group>";
+		};
 		63A2E201286EEDC300C67464 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
 				63A2E202286EEFFF00C67464 /* PracticeTableViewCell */,
-				AC4C43D3286609E200CAEFB7 /* Main.storyboard */,
 				AC8DF268286C1EE9001ADFF3 /* MainViewController.swift */,
 			);
 			path = MainView;
@@ -136,6 +148,8 @@
 		63A2E207286F34E400C67464 /* ResultView */ = {
 			isa = PBXGroup;
 			children = (
+				63BC6C3B28718E7F008F1389 /* PracticeVideoView */,
+				634FB51F28702F94009F00C1 /* IndicatorView */,
 				63A2E20C286F368600C67464 /* ResultTableViewCell */,
 				63A2E208286F352000C67464 /* ResultViewController.swift */,
 				63A2E20A286F352E00C67464 /* ResultStoryboard.storyboard */,
@@ -152,12 +166,13 @@
 			path = ResultTableViewCell;
 			sourceTree = "<group>";
 		};
-		AC1BCFBA286DD1220082C25B /* Services */ = {
+		63BC6C3B28718E7F008F1389 /* PracticeVideoView */ = {
 			isa = PBXGroup;
 			children = (
-				AC1BCFBB286DD1460082C25B /* FillerWordDetector.swift */,
+				63BC6C3C28718F04008F1389 /* PracticeVideoViewController.swift */,
+				63BC6C3E28718F75008F1389 /* PracticeVideoStoryboard.storyboard */,
 			);
-			path = Services;
+			path = PracticeVideoView;
 			sourceTree = "<group>";
 		};
 		AC4C43C1286609E200CAEFB7 = {
@@ -183,15 +198,13 @@
 		AC4C43CC286609E200CAEFB7 /* DaSpeakable Me */ = {
 			isa = PBXGroup;
 			children = (
-				AC4C4400286609EF00CAEFB7 /* Model */,
-				AC70EC29286EE785001398AB /* ViewModel */,
-				AC4C4401286609F600CAEFB7 /* View */,
-				AC1BCFBA286DD1220082C25B /* Services */,
 				AC4C44062866136800CAEFB7 /* FillerWordClassifier.mlmodel */,
+				AC4C440328660A1800CAEFB7 /* Core */,
+				AC4C4400286609EF00CAEFB7 /* Model */,
+				AC4C4401286609F600CAEFB7 /* View */,
 				ACAFEA352869BE9000EE148D /* Helper */,
 				AC4C4402286609FC00CAEFB7 /* Controller */,
 				AC4C43DE286609E300CAEFB7 /* Info.plist */,
-				AC4C440328660A1800CAEFB7 /* Core */,
 			);
 			path = "DaSpeakable Me";
 			sourceTree = "<group>";
@@ -216,6 +229,7 @@
 		AC4C4400286609EF00CAEFB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC70EC29286EE785001398AB /* ViewModel */,
 				AC70EC27286EE3DD001398AB /* PracticeModel.swift */,
 			);
 			path = Model;
@@ -224,6 +238,7 @@
 		AC4C4401286609F600CAEFB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC4C43D3286609E200CAEFB7 /* Main.storyboard */,
 				AC4C43DB286609E300CAEFB7 /* LaunchScreen.storyboard */,
 				63A2E201286EEDC300C67464 /* MainView */,
 				63A2E207286F34E400C67464 /* ResultView */,
@@ -236,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				AC4C43D1286609E200CAEFB7 /* ViewController.swift */,
-				AC4C440428660AC100CAEFB7 /* PracticeViewController.swift */,
 				AC8DF25F286C09BB001ADFF3 /* RecordingViewController.swift */,
 			);
 			path = Controller;
@@ -395,6 +409,8 @@
 				63A2E206286EF02400C67464 /* PracticeTableViewCell.xib in Resources */,
 				AC4C43DD286609E300CAEFB7 /* LaunchScreen.storyboard in Resources */,
 				63A2E218286F37A700C67464 /* ResultTableViewCell.xib in Resources */,
+				634FB52328702FE3009F00C1 /* IndicatorStoryboard.storyboard in Resources */,
+				63BC6C3F28718F75008F1389 /* PracticeVideoStoryboard.storyboard in Resources */,
 				63A2E20B286F352E00C67464 /* ResultStoryboard.storyboard in Resources */,
 				AC4C43DA286609E300CAEFB7 /* Assets.xcassets in Resources */,
 				AC4C43D5286609E200CAEFB7 /* Main.storyboard in Resources */,
@@ -425,18 +441,18 @@
 				AC4C43D2286609E200CAEFB7 /* ViewController.swift in Sources */,
 				63A2E209286F352000C67464 /* ResultViewController.swift in Sources */,
 				AC8DF26F286C38A6001ADFF3 /* SpeechArticulationHelper.swift in Sources */,
+				63BC6C3D28718F04008F1389 /* PracticeVideoViewController.swift in Sources */,
 				AC8DF269286C1EE9001ADFF3 /* MainViewController.swift in Sources */,
+				634FB52128702FCF009F00C1 /* IndicatorViewController.swift in Sources */,
 				AC8DF263286C0E96001ADFF3 /* CustomToast.swift in Sources */,
 				AC8DF25E286C085D001ADFF3 /* CameraHelper.swift in Sources */,
 				AC8DF26D286C2125001ADFF3 /* CustomButton.swift in Sources */,
 				ACAFEA372869C0B500EE148D /* SpeakHelper.swift in Sources */,
 				AC70EC28286EE3DD001398AB /* PracticeModel.swift in Sources */,
-				AC1BCFBC286DD1460082C25B /* FillerWordDetector.swift in Sources */,
 				AC790B82286AD35700368799 /* TimeHelper.swift in Sources */,
 				AC4C43CE286609E200CAEFB7 /* AppDelegate.swift in Sources */,
 				AC70EC2B286EE7A1001398AB /* PracticeViewModel.swift in Sources */,
 				AC8DF260286C09BB001ADFF3 /* RecordingViewController.swift in Sources */,
-				AC4C440528660AC100CAEFB7 /* PracticeViewController.swift in Sources */,
 				AC4C44072866136800CAEFB7 /* FillerWordClassifier.mlmodel in Sources */,
 				63A2E205286EF02400C67464 /* PracticeTableViewCell.swift in Sources */,
 				63A2E217286F37A700C67464 /* ResultTableViewCell.swift in Sources */,

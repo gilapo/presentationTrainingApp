@@ -40,8 +40,8 @@ class SpeechArticulationHelper {
             print(segmentedResult.duration)
             
             let voicing = speechFinishedResult.speechRecognitionMetadata?.voiceAnalytics!.voicing.acousticFeatureValuePerFrame
-            let sumVoicing = (voicing?.reduce(0, +))!
-            let meanVoicing = sumVoicing / Double(voicing!.count)
+            let sumVoicing = (voicing?.reduce(0, +)) ?? 0
+            let meanVoicing = sumVoicing / Double(voicing?.count ?? 0)
             let confidence = segmentedResult.confidence
             let clear = (meanVoicing + Double(confidence)) / 2
             clearResult.append(clear*100)
@@ -72,8 +72,6 @@ class SpeechArticulationHelper {
             timeTemp = timeNow + segmentedResult.duration
         }
         
-        print(clearResult)
-        print(smoothResult)
         
         let clearResultMean = clearResult.reduce(0, +) / Double(totalSegments)
         let smoothResultMean = smoothResult.reduce(0, +) /  Double(totalSegments)

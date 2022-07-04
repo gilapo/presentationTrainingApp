@@ -11,6 +11,8 @@ import UIKit
 
 class CameraHelper: NSObject {
     
+    let viewModel: PracticeViewModel = PracticeViewModel()
+    
     enum CameraControllerError: Swift.Error {
         case captureSessionAlreadyRunning
         case captureSessionIsMissing
@@ -47,9 +49,16 @@ class CameraHelper: NSObject {
     var videoOutput: AVCaptureMovieFileOutput?
     var audioInput: AVCaptureDeviceInput?
     var outputType: OutputType?
+    
+    
+    //custom
+    var videoFinalUrl:URL!
+    
 }
 
 extension CameraHelper {
+    
+    
     
     func setup(handler: @escaping (Error?)-> Void ) {
         
@@ -244,7 +253,15 @@ extension CameraHelper {
         }
         
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let fileUrl = paths[0].appendingPathComponent("output.mp4")
+        let fileUrl = paths[0].appendingPathComponent("output\(viewModel.items.count+1).mp4")
+        
+        videoFinalUrl = fileUrl
+        
+//
+        //MARK: save Video
+        
+        //try? self.viewModel.items[viewModel.items.count-1].practiceVideoUrl = String(contentsOf: fileUrl)
+        
         try? FileManager.default.removeItem(at: fileUrl)
         videoOutput!.startRecording(to: fileUrl, recordingDelegate: self)
         self.videoRecordCompletionBlock = completion
@@ -257,6 +274,15 @@ extension CameraHelper {
         }
         self.videoOutput?.stopRecording()
     }
+    
+    
+    func getVideoUrl() -> String{
+
+        let url = videoFinalUrl
+        let urlString = url?.absoluteString
+        return urlString ?? "haven't converted"
+    }
+    
 }
 
 extension CameraHelper: AVCapturePhotoCaptureDelegate {

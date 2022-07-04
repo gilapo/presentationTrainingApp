@@ -126,8 +126,9 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         practiceButton.isUserInteractionEnabled = false
         practiceButton.tintColor = UIColor(named: "Winter")
-        let point = CGPoint(x: 0.0, y: (dictationTextView.contentSize.height - dictationTextView.bounds.height))
-        dictationTextView.setContentOffset(point, animated: true)
+        
+        let range = NSMakeRange(dictationTextView.text.count - 1, 0)
+        dictationTextView.scrollRangeToVisible(range)
         
         self.cameraConfig = CameraHelper()
         cameraConfig.setup { (error) in
@@ -137,6 +138,7 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
             try? self.cameraConfig.displayPreview(self.previewImageView)
             self.practiceButton.tintColor = UIColor(named: "Navy")
             self.practiceButton.isUserInteractionEnabled = true
+            self.toggleCameraButton.setImage(UIImage(named: "flip"), for: .normal)
         }
         
     }
@@ -198,7 +200,7 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     
-    // MARK: Start recording
+    // MARK: recording config
     private func startRecording() throws {
         
         // Cancel the previous task if it's running.
@@ -310,19 +312,12 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
         //MARK: Speaking Result
         if (speechResult != nil){
             (averagePause, totalWord) = SpeakHelper().getWordPerMinutes(speakResult: self.speechResult)
-            print("pause Duration : \(averagePause ?? 0))")
-            print("wordsPerMinutes : \(Double((totalWord ?? 0)/estimatedTime))")
-            print("totalWord : \(totalWord ?? 0))")
             
-            wordsPerMinutes = Double(totalWord ?? 0)/Double(estimatedTime)
+            wordsPerMinutes = Double(totalWord ?? 0)*Double(60/estimatedTime)
             
             Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { [self] (timer) in
                 
                 (clearRate, smoothRate) = SpeechArticulationHelper().getClearAndSmoothRate(speechFinishedResult: self.speechResult)
-                
-                print("this is from controller")
-                print(clearRate)
-                print(smoothRate)
                 
             }
         }else{
@@ -381,19 +376,19 @@ class RecordingViewController: UIViewController, SFSpeechRecognizerDelegate {
             self.timer.invalidate()
             self.speakingResult()
             
-            //move to result
-            let resultVc = UIStoryboard(name: "ResultStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
-            
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 
-                self.navigationController?.pushViewController(resultVc, animated: true)
-                
                 // append new practice
-                self.viewModel.addPractice(practiceTitle: "Practice", practiceWPM: self.wordsPerMinutes, practiceArticulation: self.clearRate, practiceSmoothRate: self.smoothRate, practiceVideoUrl: self.videoSaveAt, practiceFwEh: self.counterFwEh, practiceFwHa: self.counterFwHa, practiceFwHm: self.counterFwHm)
+                self.viewModel.addPractice(practiceTitle: "Practice \(self.viewModel.items.count+1)", practiceWPM: self.wordsPerMinutes, practiceArticulation: self.clearRate, practiceSmoothRate: self.smoothRate, practiceVideoUrl:self.cameraConfig.getVideoUrl(), practiceFwEh: self.counterFwEh, practiceFwHa: self.counterFwHa, practiceFwHm: self.counterFwHm, currentDate: TimerHelper().getCurrentDate())
                 
-                print("isi view artikulasi", self.viewModel.items[self.viewModel.items.count-1].practiceArticulation)
-                print("isi view wpm", self.viewModel.items[self.viewModel.items.count-1].practiceWPM)
-                print("isi view smooth", self.viewModel.items[self.viewModel.items.count-1].practiceSmoothRate)
+                let resultVc = UIStoryboard(name: "ResultStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+                
+                //self.navigationController?.pushViewController(resultVc, animated: true)
+                self.present(resultVc, animated: true, completion: nil)
+                
+                //print("video url",self.viewModel.items[self.viewModel.items.count-1].practiceVideoUrl)
+                
+                
             }
             
             

@@ -6,6 +6,7 @@
       "size" : "20x20"
     },
     {
+      "filename" : "SpeakZam 60x60.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
@@ -71,6 +72,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "SpeakZam 76x76.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
@@ -86,6 +88,7 @@
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "SpeakZam Logo.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
